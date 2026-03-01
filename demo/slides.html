@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-TW" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.78" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme="dark"] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <meta property="og:url" content="https://94lanyu.github.io/demo/slides.html"><meta property="og:site_name" content="全自動股票管理表"><meta property="og:title" content="幻灯片页"><meta property="og:description" content="@slidestart 幻灯片演示 一个简单的幻灯片演示与各种小贴士。 作者 Mr.Hope. 请滚动鼠标滚轮进入下一页 标注幻灯片 👇 -- 标注幻灯片 使用 --- 标注水平幻灯片 在水平幻灯片中使用 -- 分割垂直幻灯片 使用 <!-- .slide: ... --> 在幻灯片上添加属性 使用 <!-- .element: ... --> 在前..."><meta property="og:type" content="article"><meta property="og:image" content="https://94lanyu.github.io/logo.svg"><meta property="og:locale" content="zh-TW"><meta property="og:updated_time" content="2024-12-13T03:10:26.000Z"><meta property="article:modified_time" content="2024-12-13T03:10:26.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"幻灯片页","image":["https://94lanyu.github.io/logo.svg"],"dateModified":"2024-12-13T03:10:26.000Z","author":[{"@type":"Person","name":"懶魚","url":""}]}</script><link rel="icon" href="/logo.ico"><meta name="google-site-verification" content="AdvLMReW9RFoWDOXEAm_koqL82b1ZwwKxlgrhaQtRnQ"><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MTHMCMQT');</script><script type="application/ld+json">{
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "全自動股票管理表",
+              "url": "https://94lanyu.github.io/",
+              "description": "基於 Google Sheets 的台股管理工具，開啟即自動更新股票成交價、計算損益、產生視覺化圖表，提供免費試用，另有美股、歐股、港股額外版本。",
+              "image": "https://94lanyu.github.io/images/台股訂閱版/儀表板.gif",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "TWD",
+                "description": "台股訂閱版，可免費試用，正式使用採訂閱制付費"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "懶魚",
+                "email": "94lanyu@gmail.com",
+                "url": "https://94lanyu.github.io/LanYu.html"
+              },
+              "featureList": [
+                "自動更新股票成交價",
+                "自動化計算交易稅與手續費",
+                "計算已實現與未實現損益",
+                "多種視覺化圖表",
+                "每週自動記錄投資變化",
+                "管理多家券商",
+                "觀察清單",
+                "現金股利管理",
+                "主版本支援台股",
+                "另提供美股、歐股、港股額外版本"
+              ]
+            }</script><script type="application/ld+json">{
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "全自動股票管理表是什麼？",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "全自動股票管理表是一套基於 Google Sheets 的股票管理工具。只需輸入交易紀錄，系統即可自動更新股票成交價、計算已實現與未實現損益、產生視覺化圖表，不需任何程式設計背景即可使用。"
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "全自動股票管理表支援台股自動更新股價嗎？",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "是的，開啟試算表後會自動更新台股最新成交價（非即時），並以最新成交價自動計算各項損益、更新圖表數據，無需手動操作。"
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "如何開始使用全自動股票管理表？",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "只需 3 個步驟：步驟 1，填寫免費試用表單；步驟 2，在 Gmail 信箱收信，透過信件內連結複製屬於自己的試算表；步驟 3，啟用並授權即可開始使用。整個流程約 3 分鐘完成。"
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "全自動股票管理表是免費的嗎？",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "提供免費試用方案，填寫申請表單後即可取得。完整功能版本（台股訂閱版）採訂閱制付費，另有美股、歐股、港股收費版本，以及依個人需求設計的客製版本。"
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "全自動股票管理表有哪些主要功能？",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "主要功能包括：自動更新股票成交價、自動計算交易稅與手續費、計算已實現損益與未實現損益、多種視覺化圖表（持股比例、賺賠分析、產業分布）、每週五自動記錄投資走勢、管理多家券商並各別設定折讓手續費、觀察清單（含顏色提醒）、現金股利管理與存股計畫。"
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "全自動股票管理表支援哪些股市？",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "主版本支援台股，另提供美股、歐股、港股的收費版本。也提供跨市場總覽功能，可將多個版本整合在一起，方便整體瀏覽不同市場的投資組合。"
+                  }
+                }
+              ]
+        }</script><title>幻灯片页 | 全自動股票管理表</title><meta name="description" content="@slidestart 幻灯片演示 一个简单的幻灯片演示与各种小贴士。 作者 Mr.Hope. 请滚动鼠标滚轮进入下一页 标注幻灯片 👇 -- 标注幻灯片 使用 --- 标注水平幻灯片 在水平幻灯片中使用 -- 分割垂直幻灯片 使用 <!-- .slide: ... --> 在幻灯片上添加属性 使用 <!-- .element: ... --> 在前...">
+    <link rel="preload" href="/assets/style-MIDASfbN.css" as="style"><link rel="stylesheet" href="/assets/style-MIDASfbN.css">
+    <link rel="modulepreload" href="/assets/app-DHzJvKaZ.js"><link rel="modulepreload" href="/assets/slides.html-Dy0KdDDH.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper-DlAUqK2U.js">
+    <link rel="prefetch" href="/assets/LanYu.html-DELnurWM.js" as="script"><link rel="prefetch" href="/assets/index.html-DKVbhh4b.js" as="script"><link rel="prefetch" href="/assets/index.html-ppDsgPPF.js" as="script"><link rel="prefetch" href="/assets/disable.html-Dj0aOGp3.js" as="script"><link rel="prefetch" href="/assets/encrypt.html-uwi_i7SL.js" as="script"><link rel="prefetch" href="/assets/markdown.html-Brf_3O_Y.js" as="script"><link rel="prefetch" href="/assets/page.html-COQtNfER.js" as="script"><link rel="prefetch" href="/assets/2021-05-19.html-C-W9EQv5.js" as="script"><link rel="prefetch" href="/assets/2021-05-20.html-JEhAqdTF.js" as="script"><link rel="prefetch" href="/assets/2021-05-21.html-DC-frVWc.js" as="script"><link rel="prefetch" href="/assets/2021-05-22.html-CaDvZPcc.js" as="script"><link rel="prefetch" href="/assets/2021-05-23.html-B6F62U8L.js" as="script"><link rel="prefetch" href="/assets/2021-05-24.html-CZ5Bm6eB.js" as="script"><link rel="prefetch" href="/assets/2021-06-02.html-BLmnLPL1.js" as="script"><link rel="prefetch" href="/assets/2021-06-25.html-BAEDvHqu.js" as="script"><link rel="prefetch" href="/assets/2021-07-20.html-61JVwkQk.js" as="script"><link rel="prefetch" href="/assets/2021-07-31.html-DC-relKv.js" as="script"><link rel="prefetch" href="/assets/2021-08-16.html-dnlhID2t.js" as="script"><link rel="prefetch" href="/assets/2022-02-17.html-EnTW2Htv.js" as="script"><link rel="prefetch" href="/assets/2022-03-15.html-BFpaRTTi.js" as="script"><link rel="prefetch" href="/assets/2022-04-20.html-ep-GAMLa.js" as="script"><link rel="prefetch" href="/assets/2022-10-31.html-NKm4HgAi.js" as="script"><link rel="prefetch" href="/assets/2022-11-01.html-C0tkWHcr.js" as="script"><link rel="prefetch" href="/assets/2022-11-02.html-C0zi-tqa.js" as="script"><link rel="prefetch" href="/assets/2022-11-03.html-CbLAZA1-.js" as="script"><link rel="prefetch" href="/assets/2022-11-04.html-B9hgc6QF.js" as="script"><link rel="prefetch" href="/assets/2022-11-05.html-aIqexqv9.js" as="script"><link rel="prefetch" href="/assets/2022-11-06.html-BnaUUUQU.js" as="script"><link rel="prefetch" href="/assets/2022-11-07.html-xK8ApQqf.js" as="script"><link rel="prefetch" href="/assets/2022-11-08.html-DZoOQMU7.js" as="script"><link rel="prefetch" href="/assets/2022-11-09.html-Dty8GhPq.js" as="script"><link rel="prefetch" href="/assets/2022-11-10.html-CBOhtn6i.js" as="script"><link rel="prefetch" href="/assets/2022-11-16.html-CwX1FjQE.js" as="script"><link rel="prefetch" href="/assets/2022-11-17.html-DrgqJ2a5.js" as="script"><link rel="prefetch" href="/assets/2022-12-01.html-B256CXgu.js" as="script"><link rel="prefetch" href="/assets/2022-12-02.html-CzWWLixE.js" as="script"><link rel="prefetch" href="/assets/2022-12-03.html-De1SNMO_.js" as="script"><link rel="prefetch" href="/assets/2024-09-19.html-CrGtZLuI.js" as="script"><link rel="prefetch" href="/assets/2025-06-18.html-4uUIxoLW.js" as="script"><link rel="prefetch" href="/assets/index.html-biZjaw5V.js" as="script"><link rel="prefetch" href="/assets/index.html-CX0lNzyI.js" as="script"><link rel="prefetch" href="/assets/一鍵更新.html-DPfW2CHv.js" as="script"><link rel="prefetch" href="/assets/切換資料範圍的區間.html-3Ea3BhPT.js" as="script"><link rel="prefetch" href="/assets/多種百分比圖.html-DxSljaxh.js" as="script"><link rel="prefetch" href="/assets/多種視覺化圖表.html-BHcIrlTH.js" as="script"><link rel="prefetch" href="/assets/自動化計算.html-Drd76zcE.js" as="script"><link rel="prefetch" href="/assets/自動更新股票成交價.html-D26GYl-X.js" as="script"><link rel="prefetch" href="/assets/自動記錄投資變化.html-CgE4tzG3.js" as="script"><link rel="prefetch" href="/assets/輕鬆管理多家券商.html-lb1FZ24I.js" as="script"><link rel="prefetch" href="/assets/付款方式.html-BqKjXP6z.js" as="script"><link rel="prefetch" href="/assets/訂閱費用.html-DA-e1CXa.js" as="script"><link rel="prefetch" href="/assets/index.html-D4X7ZYsT.js" as="script"><link rel="prefetch" href="/assets/交易紀錄.html-BSA6EhQv.js" as="script"><link rel="prefetch" href="/assets/儀表板.html-BfknGuQ9.js" as="script"><link rel="prefetch" href="/assets/券商與分類.html-bQMtSPdr.js" as="script"><link rel="prefetch" href="/assets/持股與歷史.html-DoZTnndZ.js" as="script"><link rel="prefetch" href="/assets/現金股利.html-Bk9oYeaN.js" as="script"><link rel="prefetch" href="/assets/統計.html-BFoTATau.js" as="script"><link rel="prefetch" href="/assets/股票代號.html-DPRO4CZC.js" as="script"><link rel="prefetch" href="/assets/自動記錄.html-CIgnIPIw.js" as="script"><link rel="prefetch" href="/assets/融資券.html-CcHyn3Le.js" as="script"><link rel="prefetch" href="/assets/觀察.html-CqnjHXhw.js" as="script"><link rel="prefetch" href="/assets/index.html-CECT-SQq.js" as="script"><link rel="prefetch" href="/assets/台股訂閱版.html-CstrvUGa.js" as="script"><link rel="prefetch" href="/assets/客製化.html-C4OFyfNM.js" as="script"><link rel="prefetch" href="/assets/美股收費版.html-C66OCLIw.js" as="script"><link rel="prefetch" href="/assets/404.html-CkOqRsua.js" as="script"><link rel="prefetch" href="/assets/index.html-CiuHNBxg.js" as="script"><link rel="prefetch" href="/assets/index.html-Bk2TqcnO.js" as="script"><link rel="prefetch" href="/assets/index.html-ClhKlaAM.js" as="script"><link rel="prefetch" href="/assets/index.html-l2LXf1lW.js" as="script"><link rel="prefetch" href="/assets/index.html-7jCLhCE2.js" as="script"><link rel="prefetch" href="/assets/index.html-DTfI7Ia2.js" as="script"><link rel="prefetch" href="/assets/index.html-DI7swksV.js" as="script"><link rel="prefetch" href="/assets/index.html-6IAtIhj1.js" as="script"><link rel="prefetch" href="/assets/index.html-DFN2jkei.js" as="script"><link rel="prefetch" href="/assets/index.html-BxfwmBf3.js" as="script"><link rel="prefetch" href="/assets/index.html-DcLmfqnb.js" as="script"><link rel="prefetch" href="/assets/index.html-jD_ayzUO.js" as="script"><link rel="prefetch" href="/assets/index.html-CFPuzzQn.js" as="script"><link rel="prefetch" href="/assets/index.html-B0eBQ0Nl.js" as="script"><link rel="prefetch" href="/assets/index.html-CKxbEdKQ.js" as="script"><link rel="prefetch" href="/assets/index.html-DZ5lTnuY.js" as="script"><link rel="prefetch" href="/assets/index.html-BFrfyYxh.js" as="script"><link rel="prefetch" href="/assets/index.html-DmKihUg5.js" as="script"><link rel="prefetch" href="/assets/index.html-D7jSYgY_.js" as="script"><link rel="prefetch" href="/assets/index.html-CFIUMqDp.js" as="script"><link rel="prefetch" href="/assets/index.html-WtGc41rd.js" as="script"><link rel="prefetch" href="/assets/index.html-BasLSoL7.js" as="script"><link rel="prefetch" href="/assets/index.html-BKUV8eWX.js" as="script"><link rel="prefetch" href="/assets/index.html-X97wSTMp.js" as="script"><link rel="prefetch" href="/assets/index.html-BG4wPWW3.js" as="script"><link rel="prefetch" href="/assets/index.html-D-14Dmc6.js" as="script"><link rel="prefetch" href="/assets/index.html-YukAb3RJ.js" as="script"><link rel="prefetch" href="/assets/index.html-DQhQxrs3.js" as="script"><link rel="prefetch" href="/assets/index.html-CiuHNBxg.js" as="script"><link rel="prefetch" href="/assets/auto-iKZcN642.js" as="script"><link rel="prefetch" href="/assets/mermaid.esm.min-BbGcdHH9.js" as="script"><link rel="prefetch" href="/assets/vue-repl-DdXgpX7I.js" as="script"><link rel="prefetch" href="/assets/codemirror-editor-T76xrw7A.js" as="script"><link rel="prefetch" href="/assets/photoswipe.esm-DXWKOczD.js" as="script"><link rel="prefetch" href="/assets/prod-2bpUjoeS.js" as="script"><link rel="prefetch" href="/assets/prod-2bpUjoeS.js" as="script"><link rel="prefetch" href="/assets/vidstack-audio-B-joqww7.js" as="script"><link rel="prefetch" href="/assets/vidstack-video-GfZvKkY-.js" as="script"><link rel="prefetch" href="/assets/vidstack-hls-9x_Lh-fM.js" as="script"><link rel="prefetch" href="/assets/vidstack-dash-epO-U81j.js" as="script"><link rel="prefetch" href="/assets/vidstack-vimeo-CYE62muK.js" as="script"><link rel="prefetch" href="/assets/vidstack-krOAtKMi-C3UUF7YD.js" as="script"><link rel="prefetch" href="/assets/vidstack-youtube-w25YOP0_.js" as="script"><link rel="prefetch" href="/assets/vidstack-Dm1xEU9Q-qchDHvRd.js" as="script"><link rel="prefetch" href="/assets/vidstack-D2pY00kU-C26X5H95.js" as="script"><link rel="prefetch" href="/assets/vidstack-D_-9AA6_-Cs6VAh--.js" as="script"><link rel="prefetch" href="/assets/vidstack-player-default-layout-BiDXpVYg.js" as="script"><link rel="prefetch" href="/assets/vidstack-player-ui-CiPjrgE8.js" as="script"><link rel="prefetch" href="/assets/vidstack-D3ltXc3a-Ik02yfp3.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!----></div>
+    <script type="module" src="/assets/app-DHzJvKaZ.js" defer></script>
+  </body>
+</html>
